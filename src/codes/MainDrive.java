@@ -45,11 +45,15 @@ public class MainDrive {
 		
 		
 		Scanner myScanner = new Scanner(System.in);
+		
+		int tryCount = 0;
+		
 		while (true) {
 			
 			System.out.println("답안 입력 : ");
 			
 			int inputNum = myScanner.nextInt();
+			tryCount++;
 			
 //			321 => {3, 2, 1} 처럼 세칸 배열로 분리 / 맞춘 S, B 판정 (입력은 3자리지만 비교하려면 배열로 쪼개야 함)
 			
@@ -86,6 +90,7 @@ public class MainDrive {
 			
 			if(strikeCount == 3) {
 				System.out.println("축하합니다!");
+				System.out.println(tryCount + "회만에 정답을 맞췄습니다.");
 				System.out.println("게임을 종료합니다.");
 				
 				break;
