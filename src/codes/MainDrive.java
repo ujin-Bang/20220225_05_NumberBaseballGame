@@ -53,7 +53,12 @@ public class MainDrive {
 			
 //			321 => {3, 2, 1} 처럼 세칸 배열로 분리 / 맞춘 S, B 판정 (입력은 3자리지만 비교하려면 배열로 쪼개야 함)
 			
+			int[] myNumbers = new int[3];
 			
+			myNumbers[0] = inputNum / 100;
+			myNumbers[1] = inputNum / 10 % 10;
+			myNumbers[2] = inputNum % 10;
+					
 			
 		}
 		
